@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NotesApp.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+
+            <Label
+                x:Name="NomeLabel"
+                Text="Hello, World!"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+            <!--Outros atributos comuns em um Label... 
+                TextColor="#RRGGBB"
+                CharacterSpacing="10"
+                LineBreakMode="WordWrap"
+                MaxLines="2"
+            -->
+
+            <Entry
+                x:Name="EntradaEntry"
+                Placeholder="Seu Nome Aqui!"
+                MaxLength="30"
+                ClearButtonVisibility="WhileEditing"
+                />
+            <!--Outros atributos comuns em um Entry... 
+                TextChanged="OnEntryTextChanged"
+                Completed="OnEntryCompleted" 
+                IsPassword="true" 
+                IsReadOnly="true"
+            -->
+            <!--&#10 = enter-->
+
+            <Button
+                x:Name="OiButton"
+                Text="Click me" 
+                SemanticProperties.Hint="Altera o Hello, World para Olá, nome digitado."
+                Clicked="OiButton_Clicked"
+                HorizontalOptions="Fill" 
+                />
+            <!--Outros atributos comuns em um Button... 
+                Pressed="OiButton_Pressed"
+                Released="OiButton_Released"
+                VerticalOptions="Center"
+                TextDecorations="Underline, Strikethrough, Bold"
+                TextTransform="Uppercase"
+            -->
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

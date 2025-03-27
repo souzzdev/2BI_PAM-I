@@ -1,0 +1,1 @@
+D:\Local\2AI\PAMI\NotesApp\NotesApp\NotesApp.csproj;x64
